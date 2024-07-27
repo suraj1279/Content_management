@@ -1,0 +1,91 @@
+body {
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #8a1414;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+    background-color: aqua;
+    /* Add a transition for background color change */
+}
+
+#contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog {
+    border: 1px solid #119532;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: greenyellow;
+    transition: background-color 0.3s;
+    /* Add a transition for background color change */
+}
+
+.blog h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.blog img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blog iframe {
+    max-width: 100%;
+}
+
+#contentForm {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#contentForm label {
+    font-weight: bold;
+}
+
+#contentForm input[type="text"],
+#contentForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#contentForm button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    /* Add a transition for background color change */
+}
+
+#contentForm button[type="submit"]:hover {
+    background-color: #0056b3;
+    /* Change the background color on hover */
+}
+
+@media screen and (max-width: 768px) {
+    #contentForm,
+    .blog {
+        max-width: 100%;
+    }
+    /* Responsive adjustments for smaller screens here */
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+}
